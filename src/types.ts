@@ -18,6 +18,7 @@ export enum Social {
   Viber = 'viber',
   Discord = 'discord',
   KakaoTalk = 'kakaotalk',
+  Line = 'line',
 }
 
 export enum ShareAsset {

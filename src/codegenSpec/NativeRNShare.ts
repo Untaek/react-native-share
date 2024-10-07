@@ -27,6 +27,7 @@ export interface Spec extends TurboModule {
     GENERIC?: string;
     DISCORD?: string;
     KAKAOTALK?: string;
+    LINE?: string
   };
   open: (options: Object) => Promise<{ success: boolean; message: string }>;
   shareSingle: (options: Object) => Promise<{ success: boolean; message: string }>;

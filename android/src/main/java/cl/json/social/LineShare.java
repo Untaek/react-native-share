@@ -8,12 +8,12 @@ import com.facebook.react.bridge.ReadableMap;
 /**
  * Created by Untaek on 24-10-07.
  */
-public class KakaoTalkShare extends SingleShareIntent {
+public class LineShare extends SingleShareIntent {
 
-    private static final String PACKAGE = "com.kakao.talk";
-    private static final String PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=com.kakao.talk";
+    private static final String PACKAGE = "jp.naver.line.android";
+    private static final String PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=jp.naver.line.android";
 
-    public KakaoTalkShare(ReactApplicationContext reactContext) {
+    public LineShare(ReactApplicationContext reactContext) {
         super(reactContext);
     }
     @Override

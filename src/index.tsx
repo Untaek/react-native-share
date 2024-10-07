@@ -44,6 +44,7 @@ const RNShare = {
     VIBER: NativeRNShare.getConstants().VIBER || Social.Viber,
     DISCORD: NativeRNShare.getConstants().DISCORD || Social.Discord,
     KAKAOTALK: NativeRNShare.getConstants().KAKAOTALK || Social.KakaoTalk,
+    LINE: NativeRNShare.getConstants().LINE || Social.Line,
   },
 
   async open(options: ShareOptions) {

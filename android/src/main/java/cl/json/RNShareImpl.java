@@ -36,6 +36,7 @@ import cl.json.social.LinkedinShare;
 import cl.json.social.ViberShare;
 import cl.json.social.DiscordShare;
 import cl.json.social.KakaoTalkShare;
+import cl.json.social.LineShare;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -94,7 +95,8 @@ public class RNShareImpl implements ActivityEventListener {
         telegram,
         viber,
         discord,
-        kakaotalk;
+        kakaotalk,
+        line;
 
 
         public static ShareIntent getShareClass(String social, ReactApplicationContext reactContext) {
@@ -140,6 +142,8 @@ public class RNShareImpl implements ActivityEventListener {
                     return new DiscordShare(reactContext);
                 case kakaotalk:
                     return new KakaoTalkShare(reactContext);
+                case line:
+                    return new LineShare(reactContext);
                 default:
                     return null;
             }
